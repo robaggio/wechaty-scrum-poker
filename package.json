@@ -1,0 +1,26 @@
+{
+  "name": "wechaty-scrum-poker",
+  "version": "1.0.0",
+  "description": "Poker planning for scrum using wechat bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robaggio/wechaty-scrum-poker.git"
+  },
+  "keywords": [
+    "wechaty",
+    "scrum"
+  ],
+  "author": "robaggio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robaggio/wechaty-scrum-poker/issues"
+  },
+  "homepage": "https://github.com/robaggio/wechaty-scrum-poker#readme",
+  "dependencies": {
+    "wechaty": "^0.8.91"
+  }
+}
