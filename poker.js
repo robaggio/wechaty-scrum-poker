@@ -3,12 +3,12 @@
  */
 
 const {
-    Config,
+    config,
     Wechaty,
     log,
     Message,
 } = require('wechaty')
-const bot = Wechaty.instance({ profile: Config.DEFAULT_PROFILE })
+const bot = Wechaty.instance({ profile: config.DEFAULT_PROFILE })
 
 //每人出牌分数
 var votes = {};
@@ -218,7 +218,7 @@ function sendMessage(to,content){
     var mm = new Message();
     mm.to(to);
     mm.content(content);
-    return Config.puppetInstance()
+    return config.puppetInstance()
               .send(mm);
 }
 
