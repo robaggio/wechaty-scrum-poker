@@ -4,9 +4,7 @@
 
 本脚本使用Wechaty作为微信机器人框架： :octocat: <https://github.com/chatie/wechaty>
 
-## 如何使用
-
-### 安装
+## 安装
 ```shell
 $ npm --registry https://registry.npm.taobao.org install
 ```
@@ -14,7 +12,7 @@ $ npm --registry https://registry.npm.taobao.org install
 ```shell
 $ npm install chromedriver --chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
 ```
-### 运行
+## 运行
 ```shell
 $ node poker.js
 ```
