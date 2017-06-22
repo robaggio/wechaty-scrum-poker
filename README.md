@@ -6,7 +6,7 @@
 
 ## 如何使用
 
-###安装
+### 安装
 ```shell
 $ npm --registry https://registry.npm.taobao.org install
 ```
@@ -14,7 +14,7 @@ $ npm --registry https://registry.npm.taobao.org install
 ```shell
 $ npm install chromedriver --chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
 ```
-###运行
+### 运行
 ```shell
 $ node poker.js
 ```
