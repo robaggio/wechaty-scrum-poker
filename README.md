@@ -5,10 +5,20 @@
 本脚本使用Wechaty作为微信机器人框架： :octocat: <https://github.com/chatie/wechaty>
 
 ## 如何使用
+
+###安装
 ```shell
-$ npm install
+$ npm --registry https://registry.npm.taobao.org install
+```
+如果chromedriver下载速度太慢可以先
+```shell
+$ npm install chromedriver --chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
+```
+###运行
+```shell
 $ node poker.js
 ```
+
 scrum master扫描二维码登录，开发同事发消息给scrum master的微信来交互。
 * 用户指令
 	* in：参加打牌
