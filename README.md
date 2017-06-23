@@ -5,13 +5,12 @@
 本脚本使用Wechaty作为微信机器人框架： :octocat: <https://github.com/chatie/wechaty>
 
 ## 安装
-```shell
-$ npm --registry https://registry.npm.taobao.org install
-```
-如果chromedriver下载速度太慢可以先
+进入wechaty-scrum-poker目录
 ```shell
 $ npm install chromedriver --chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
+$ npm --registry https://registry.npm.taobao.org install
 ```
+
 ## 运行
 ```shell
 $ node poker.js
