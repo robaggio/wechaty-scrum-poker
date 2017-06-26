@@ -5,7 +5,7 @@
 本脚本使用Wechaty作为微信机器人框架： :octocat: <https://github.com/chatie/wechaty>
 
 ## 安装
-进入wechaty-scrum-poker目录
+确保电脑安装了Chrome, 进入wechaty-scrum-poker目录
 ```shell
 $ npm install chromedriver --chromedriver_cdnurl=https://npm.taobao.org/mirrors/chromedriver
 $ npm --registry https://registry.npm.taobao.org install
@@ -16,13 +16,13 @@ $ npm --registry https://registry.npm.taobao.org install
 $ node poker.js
 ```
 
-scrum master扫描二维码登录，开发同事发消息给scrum master的微信来交互。
+scrum master扫描二维码登录，作为超级管理员，开发同事发消息给scrum master的微信来交互，超级管理员还可以指定一个开发作为房间管理员。
 * 用户指令
 	* in：参加打牌
 	* out：不参加了
 	* 数字：出牌，多次输入覆盖前次
 * 管理员指令
-	* admin：指定管理员
+	* admin：指定房间管理员
 	* s/stat：查看当前状态
 	* f/flush：将当前未出牌同事踢掉，同时进行结算
 	* r/reset：重置当前出牌数据
