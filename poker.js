@@ -3,12 +3,11 @@
  */
 
 const {
-    config,
     Wechaty,
     log,
     Message,
 } = require('wechaty')
-const bot = Wechaty.instance({ profile: config.DEFAULT_PROFILE })
+const bot = Wechaty.instance()
 
 //每人出牌分数
 var votes = {};
@@ -214,12 +213,8 @@ function checkStat(m){
     sendMessage(roomAdmin?roomAdmin:m.to(),"[嘿哈]("+ i +"/" + j + ")" + stat);
 }
 
-function sendMessage(to,content){
-    var mm = new Message();
-    mm.to(to);
-    mm.content(content);
-    return config.puppetInstance()
-              .send(mm);
+function sendMessage(to2,content){
+    return to2.say(content)
 }
 
 function userCount(){
